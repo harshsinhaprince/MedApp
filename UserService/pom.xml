@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.medapps</groupId>
-	<artifactId>MedApps</artifactId>
+	<artifactId>UserService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MedApps</name>
-	<description>Medicine project for Spring Boot</description>
+	<name>UserService</name>
+	<description>UserService for Medapps</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -37,7 +37,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+			<dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.26</version> <!-- Use the appropriate version -->
