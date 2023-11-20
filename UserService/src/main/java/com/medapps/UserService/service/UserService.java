@@ -23,6 +23,13 @@ public class UserService {
 		String otp = generateOtp();
 		user.setOtp(otp);
 		user.setActive(false);// set the account as inactive until the otp verification
+		
+		//Hash the password before saving
+		BCryptPasswordEncoder passwordEncoder=new BCryptPasswordEncoder();
+		String hashPassowrd=passwordEncoder.encode(user.getPassword());
+		user.setPassword(hashPassowrd);
+		
+		
 		return userRepository.save(user);
 
 	}
